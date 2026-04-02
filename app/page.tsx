@@ -51,7 +51,7 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
             className="flex gap-4 mt-10 z-10">
-            <a href="/Essouiri_Aya_CV.pdf" download className="flex items-center gap-2 px-7 py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:scale-110 hover:shadow-xl transition-transform duration-300">
+            <a href="/Essouiri Aya CV.pdf" download className="flex items-center gap-2 px-7 py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:scale-110 hover:shadow-xl transition-transform duration-300">
               <Download size={18}/> Download CV
             </a>
             <a href="#contact" className="flex items-center gap-2 px-7 py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:scale-110 hover:shadow-xl transition-transform duration-300">
