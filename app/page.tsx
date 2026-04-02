@@ -123,7 +123,7 @@ export default function Portfolio() {
               <SkillCard 
                 icon={<Cpu />} 
                 title="Cloud, IoT & Cybersecurity" 
-                skills="Cloud Computing, Internet of Things (IoT), Cybersecurity Fundamentals, Secure Web Applications,, Linux Systems" 
+                skills="Cloud Computing, Internet of Things (IoT), Cybersecurity Fundamentals, Secure Web Applications, Linux Systems" 
               />
 
               <SkillCard 
