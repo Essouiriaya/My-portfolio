@@ -122,8 +122,8 @@ export default function Portfolio() {
 
               <SkillCard 
                 icon={<Cpu />} 
-                title="Cybersecurity & Systems" 
-                skills="Cybersecurity Fundamentals, Secure Web Applications, Linux Systems" 
+                title="Cloud, IoT & Cybersecurity" 
+                skills="Cloud Computing, Internet of Things (IoT), Cybersecurity Fundamentals, Secure Web Applications,, Linux Systems" 
               />
 
               <SkillCard 
@@ -133,17 +133,10 @@ export default function Portfolio() {
               />
 
               <SkillCard 
-                icon={<Briefcase />} 
-                title="Entrepreneurship" 
-                skills="Startup mindset, Business Model Canvas, Innovation Management" 
-              />
-
-              <SkillCard 
                 icon={<Brain />} 
-                title="Languages & Soft Skills" 
-                skills="French, English, Analytical thinking, Problem solving, Teamwork, Communication, Time management" 
+                title="Entrepreneurship, Languages & Soft Skills" 
+                skills="Startup mindset, Business Model Canvas, Innovation Management, French, English, Analytical thinking, Problem solving, Teamwork, Communication, Time management" 
               />
-
             </div>
           </div>
         </section>
