@@ -87,15 +87,63 @@ export default function Portfolio() {
         <section id="skills" className="bg-[#020617] py-24">
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-3xl font-bold mb-12 text-center">Skills</h2>
+
             <div className="grid md:grid-cols-3 gap-6">
-              <SkillCard icon={<Code />} title="Programming" skills="Java, Python, PHP, C, SQL" />
-              <SkillCard icon={<Layers />} title="Frontend" skills="HTML, CSS, JS, Angular, Tailwind, Bootstrap" />
-              <SkillCard icon={<Briefcase />} title="Backend" skills="Spring Boot, Flask, FastAPI, Laravel, REST APIs" />
-              <SkillCard icon={<Brain />} title="AI & Data" skills="Machine Learning, Deep Learning, NLP, Pandas, Scikit-learn" />
-              <SkillCard icon={<Database />} title="Databases" skills="MySQL, PostgreSQL, MongoDB, SQLAlchemy" />
-              <SkillCard icon={<Wrench />} title="DevOps & Tools" skills="Git, Docker, Linux, Postman, Maven, Odoo, Scrum" />
-              <SkillCard icon={<Cpu />} title="Cloud, IoT & Sécurité" skills="Cloud Computing, Internet des Objets (IoT), Cybersécurité" />
-              <SkillCard icon={<Brain />} title="Transversal Skills" skills="Analytical thinking, problem-solving, teamwork, autonomy, time management, professional communication, entrepreneurial mindset" />
+
+              <SkillCard 
+                icon={<Code />} 
+                title="Programming" 
+                skills="Java, Python, PHP, C, SQL" 
+              />
+
+              <SkillCard 
+                icon={<Layers />} 
+                title="Frontend Development" 
+                skills="HTML, CSS, JavaScript, Angular, Tailwind CSS, Bootstrap" 
+              />
+
+              <SkillCard 
+                icon={<Briefcase />} 
+                title="Backend Development" 
+                skills="Spring Boot, Flask, FastAPI, Laravel, REST APIs, Java Servlets" 
+              />
+
+              <SkillCard 
+                icon={<Brain />} 
+                title="Artificial Intelligence" 
+                skills="Machine Learning, Deep Learning, NLP, Pandas, Scikit-learn" 
+              />
+
+              <SkillCard 
+                icon={<Database />} 
+                title="Data Engineering & Big Data" 
+                skills="Data Warehousing, Data Lakes, Apache Airflow, Data Ingestion, ETL Pipelines" 
+              />
+
+              <SkillCard 
+                icon={<Cpu />} 
+                title="Cybersecurity & Systems" 
+                skills="Cybersecurity Fundamentals, Secure Web Applications, Linux Systems" 
+              />
+
+              <SkillCard 
+                icon={<Wrench />} 
+                title="DevOps & Tools" 
+                skills="Git, Docker, Linux, Postman, Maven, Agile/Scrum" 
+              />
+
+              <SkillCard 
+                icon={<Briefcase />} 
+                title="Entrepreneurship" 
+                skills="Startup mindset, Business Model Canvas, Innovation Management" 
+              />
+
+              <SkillCard 
+                icon={<Brain />} 
+                title="Languages & Soft Skills" 
+                skills="French, English, Analytical thinking, Problem solving, Teamwork, Communication, Time management" 
+              />
+
             </div>
           </div>
         </section>
