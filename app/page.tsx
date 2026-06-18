@@ -148,7 +148,7 @@ export default function Portfolio() {
               problem="Fragmented job market data and lack of real-time analytical insights"
               desc="End-to-end Data Engineering architecture including multi-source job scraping, ETL orchestration with Apache Airflow, Lakehouse architecture using Azure Data Lake, PostgreSQL data warehouse in star schema, intelligent skill extraction using BERT-NER, clustering and recommendation system, as well as a Power BI dashboard and a real-time web visualization application."
               tech="Docker, Airflow, PostgreSQL, Azure Data Lake, BERT-NER, FAISS, Power BI, Flask"
-              github="https://lnkd.in/eX8Em_bX"
+              github="https://github.com/Essouiriaya/job_intelligent.git"
             />
             <ProjectCard
               title="Darija AI Translator — AI-Powered Translation Platform"
