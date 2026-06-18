@@ -143,6 +143,20 @@ export default function Portfolio() {
         <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
           <h2 className="text-3xl font-bold mb-12 text-center">Selected Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
+            <ProjectCard
+              title="Intelligent ETL Pipeline for Job Market Data Analysis"
+              problem="Fragmented job market data and lack of real-time analytical insights"
+              desc="End-to-end Data Engineering architecture including multi-source job scraping, ETL orchestration with Apache Airflow, Lakehouse architecture using Azure Data Lake, PostgreSQL data warehouse in star schema, intelligent skill extraction using BERT-NER, clustering and recommendation system, as well as a Power BI dashboard and a real-time web visualization application."
+              tech="Docker, Airflow, PostgreSQL, Azure Data Lake, BERT-NER, FAISS, Power BI, Flask"
+              github="https://lnkd.in/eX8Em_bX"
+            />
+            <ProjectCard
+              title="Darija AI Translator — AI-Powered Translation Platform"
+              problem="Lack of effective solutions for translating Moroccan Darija dialect into English"
+              desc="Full-stack intelligent translation platform for Darija to English using Transformer-based models, speech recognition with Whisper, OCR with EasyOCR, and a Flask web application. The system also includes user authentication and translation history. Models were trained on 86,000+ sentence pairs from MADAR and DODa datasets."
+              tech="PyTorch, Hugging Face Transformers, Whisper, EasyOCR, Flask, NLP"
+              github="https://github.com/Essouiriaya/darija_ai_project.git"
+            />
             <ProjectCard title="Smart Home IoT Dashboard" problem="Lack of real-time IoT monitoring and control" desc="Cloud-based IoT system with real-time sensor simulation, data streaming, and bidirectional control." tech="Python, Flask, MQTT, Angular" github="https://github.com/Essouiriaya/SmartHome-IoT.git" />
             <ProjectCard title="Digitalization of Final Year Project Management (Odoo 16)" problem="Manual and scattered management of final year projects" desc="Complete Odoo 16 module that centralizes PFE data (students, supervisors, projects, companies) and automates the main steps of the PFE lifecycle." tech="Odoo 16, Python, XML, PostgreSQL" github="https://github.com/Essouiriaya/GestionPFE.git" />
             <ProjectCard title="HomeLyo – Home Services Platform" problem="Manual and inefficient management of home services" desc="Full-stack platform for booking and managing home services with secure REST APIs and admin dashboard." tech="Spring Boot, Angular, MySQL"/>
