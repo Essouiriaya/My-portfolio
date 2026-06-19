@@ -107,8 +107,8 @@ const EXPERIENCE = [
 
 const EDUCATION = [
   { degree: "Engineering Degree", institution: "ENSA Al Hoceima", specialization: "Digital Transformation & AI", year: "2022 — Present" },
-  { degree: "Preparatory Year \n MIP (Math, CS, Physics)", institution: "FST Al Hoceima, Morocco", year: "2021 — 2022" },
-  { degree: "Scientific Baccalaureate \n Physical Sciences", institution: "Othman Ben Affan High School, Nador", year: "2020 — 2021" },
+  { degree: "Preparatory Year — MIP (Math, CS, Physics)", institution: "FST Al Hoceima, Morocco", year: "2021 — 2022" },
+  { degree: "Scientific Baccalaureate — Physical Sciences", institution: "Othman Ben Affan High School, Nador", year: "2020 — 2021" },
 ];
 
 /* ---------- Building blocks ---------- */
