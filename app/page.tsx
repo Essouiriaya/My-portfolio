@@ -18,14 +18,121 @@ const NAV = [
 ] as const;
 
 const SKILLS = [
-  { icon: Code, title: "Programming", skills: ["Java", "Python", "PHP", "C", "SQL"] },
-  { icon: Layers, title: "Frontend Development", skills: ["HTML", "CSS", "JavaScript", "Angular", "Tailwind CSS", "Bootstrap"] },
-  { icon: Briefcase, title: "Backend Development", skills: ["Spring Boot", "Flask", "FastAPI", "Laravel", "REST APIs", "Java Servlets"] },
-  { icon: Brain, title: "Artificial Intelligence", skills: ["Machine Learning", "Deep Learning", "NLP", "Pandas", "Scikit-learn"] },
-  { icon: Database, title: "Data Engineering & Big Data", skills: ["Data Warehousing", "Data Lakes", "Apache Airflow", "Data Ingestion", "ETL Pipelines"] },
-  { icon: Cpu, title: "Cloud, IoT & Cybersecurity", skills: ["Cloud Computing", "IoT", "Cybersecurity", "Secure Web Apps", "Linux Systems"] },
-  { icon: Wrench, title: "DevOps & Tools", skills: ["Git", "Docker", "Linux", "Postman", "Maven", "Agile/Scrum"] },
-  { icon: Sparkles, title: "Entrepreneurship & Soft Skills", skills: ["Startup mindset", "Business Model Canvas", "Innovation", "French", "English", "Analytical thinking", "Teamwork", "Communication"] },
+  {
+    icon: Code,
+    title: "Programming & Databases",
+    skills: ["Python", "Java", "SQL", "C", "PostgreSQL", "MySQL", "MongoDB"]
+  },
+
+  {
+    icon: Brain,
+    title: "Artificial Intelligence",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "Scikit-learn",
+      "Pandas"
+    ]
+  },
+
+  {
+    icon: Sparkles,
+    title: "Generative AI & LLM",
+    skills: [
+      "LLM",
+      "RAG",
+      "LangChain",
+      "Ollama",
+      "ChromaDB",
+      "BERT",
+      "Embeddings",
+      "Prompt Engineering"
+    ]
+  },
+
+  {
+    icon: Database,
+    title: "Data Engineering & Big Data",
+    skills: [
+      "ETL / ELT",
+      "Data Warehousing",
+      "Data Lakes",
+      "Apache Airflow",
+      "Apache Spark",
+      "Apache Kafka",
+      "Data Ingestion",
+      "Data Pipelines"
+    ]
+  },
+
+  {
+    icon: Layers,
+    title: "Backend & APIs",
+    skills: [
+      "FastAPI",
+      "Flask",
+      "Spring Boot",
+      "REST APIs",
+      "Java Servlets"
+    ]
+  },
+
+  {
+    icon: Cloud,
+    title: "Cloud & Data Platforms",
+    skills: [
+      "Azure Data Lake",
+      "Cloud Computing",
+      "Docker",
+      "Linux",
+      "MQTT / IoT"
+    ]
+  },
+
+  {
+    icon: Wrench,
+    title: "DevOps & Tools",
+    skills: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "MLflow",
+      "Postman",
+      "Maven",
+      "Jupyter",
+      "Agile / Scrum"
+    ]
+  },
+
+  {
+    icon: Briefcase,
+    title: "Data Analytics & BI",
+    skills: [
+      "Power BI",
+      "Data Visualization",
+      "Data Analysis",
+      "Feature Engineering",
+      "Statistical Analysis"
+    ]
+  },
+
+  {
+    icon: Users,
+    title: "Soft Skills & Languages",
+    skills: [
+      "Analytical Thinking",
+      "Problem Solving",
+      "Teamwork",
+      "Communication",
+      "French",
+      "English"
+    ]
+  }
 ];
 
 const PROJECTS = [
@@ -88,6 +195,28 @@ const PROJECTS = [
 ];
 
 const EXPERIENCE = [
+  {
+    title: "AI & Data Engineering Intern — PFA",
+    company: "Smart Automation Technologies (SAT)",
+    domain: "Industrial AI & Explainable Thermal Diagnosis",
+    desc: "Designed and developed an intelligent and explainable system for thermal diagnosis of induction motors. Built a computer vision pipeline using Deep Learning and Transfer Learning, combined hybrid Machine Learning models, Grad-CAM explainability, and a RAG-based LLM assistant for knowledge-grounded diagnosis.",
+    tech: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "DenseNet121",
+      "Scikit-learn",
+      "Computer Vision",
+      "Grad-CAM",
+      "RAG",
+      "LLM",
+      "LangChain",
+      "ChromaDB",
+      "Ollama",
+      "FastAPI",
+      "Streamlit"
+    ],
+  },
   {
     title: "Web Developer Intern",
     company: "ENAF GROUP",
@@ -230,9 +359,9 @@ export default function Portfolio() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-8 max-w-3xl text-base text-muted-foreground sm:text-lg md:text-xl"
         >
-          Digital Transformation & AI Engineering Student · Full-Stack Developer
+          Digital Transformation & AI Engineering Student · AI & Data Enthusiast
           <br className="hidden sm:block" />
-          <span className="text-foreground/80">Building intelligent systems, IoT and data-driven applications.</span>
+          <span className="text-foreground/80">Building intelligent systems, data-driven applications and AI-powered solutions.</span>
         </motion.p>
 
         <motion.div
@@ -242,7 +371,7 @@ export default function Portfolio() {
           className="mt-10 flex flex-wrap items-center justify-center gap-3"
         >
           <a
-            href="/Essouiri Aya CV.pdf"
+            href="/EssouiriAya_CV.pdf"
             download
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:-translate-y-0.5"
           >
@@ -281,19 +410,36 @@ export default function Portfolio() {
           >
             <p className="text-muted-foreground leading-relaxed">
               I am an Engineering student specializing in{" "}
-              <strong className="text-foreground">Digital Transformation & AI</strong> at ENSA Al Hoceima,
-              with a strong foundation in software engineering, full-stack development, IoT systems, and
-              data-driven applications. I design and ship scalable solutions, integrate real-time IoT
-              devices, and build intelligent systems to solve complex problems.
+              <strong className="text-foreground">
+                Digital Transformation & AI
+              </strong>{" "}
+              at ENSA Al Hoceima, with a strong foundation in Artificial Intelligence,
+              Data Engineering, software development, and intelligent systems. I build
+              data-driven solutions, develop machine learning and deep learning models,
+              and transform complex data into practical AI-powered applications.
             </p>
+
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              My stack spans Angular on the front-end, Spring Boot, Flask and REST APIs on the back-end,
-              and MySQL / MongoDB on the data layer. I also work hands-on with AI and ML — predictive
-              modeling, data analysis and automation.
+              My technical experience spans{" "}
+              <strong className="text-foreground">
+                Machine Learning, Deep Learning, Computer Vision, NLP, Generative AI,
+                RAG and LLMs
+              </strong>
+              , alongside Data Engineering technologies such as ETL pipelines,
+              Apache Airflow, data warehouses, data lakes, and Apache Spark. I also
+              develop production-ready APIs and applications using Python, FastAPI,
+              Flask, Spring Boot, Docker, and REST APIs.
             </p>
+
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              My goal is to contribute to cutting-edge projects in AI, IoT and full-stack development,
-              while continuously learning in intelligent systems and digital innovation.
+              Through academic and professional projects, I have worked on intelligent
+              systems combining{" "}
+              <strong className="text-foreground">
+                AI, data pipelines, explainability, and real-world applications
+              </strong>
+              . My goal is to contribute to challenging AI and Data projects while
+              continuously developing my expertise in Machine Learning, Generative AI,
+              Data Engineering, and MLOps.
             </p>
           </motion.div>
 
