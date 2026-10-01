@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import {
   Github, Linkedin, Mail, Download, Home, Code, BookOpen, Briefcase,
   Brain, Database, Wrench, Layers, Cpu, ExternalLink, ArrowUpRight, Sparkles,
+  Cloud, Users,
 } from "lucide-react";
 import type { ReactNode } from "react";
 
@@ -409,38 +410,38 @@ export default function Portfolio() {
             className="glass shadow-card md:col-span-3 rounded-3xl p-8"
           >
             <p className="text-muted-foreground leading-relaxed">
-              I am an Engineering student specializing in{" "}
-              <strong className="text-foreground">
-                Digital Transformation & AI
-              </strong>{" "}
-              at ENSA Al Hoceima, with a strong foundation in Artificial Intelligence,
-              Data Engineering, software development, and intelligent systems. I build
-              data-driven solutions, develop machine learning and deep learning models,
-              and transform complex data into practical AI-powered applications.
-            </p>
+            I am an Engineering student specializing in{" "}
+            <strong className="text-foreground">
+              Digital Transformation & AI
+            </strong>{" "}
+            at ENSA Al Hoceima, with a strong foundation in Artificial Intelligence,
+            Data Engineering, software development, and intelligent systems. I build
+            data-driven solutions, develop machine learning and deep learning models,
+            and transform complex data into practical AI-powered applications.
+          </p>
 
-            <p className="mt-5 text-muted-foreground leading-relaxed">
-              My technical experience spans{" "}
-              <strong className="text-foreground">
-                Machine Learning, Deep Learning, Computer Vision, NLP, Generative AI,
-                RAG and LLMs
-              </strong>
-              , alongside Data Engineering technologies such as ETL pipelines,
-              Apache Airflow, data warehouses, data lakes, and Apache Spark. I also
-              develop production-ready APIs and applications using Python, FastAPI,
-              Flask, Spring Boot, Docker, and REST APIs.
-            </p>
+          <p className="mt-5 text-muted-foreground leading-relaxed">
+            My technical experience spans{" "}
+            <strong className="text-foreground">
+              Machine Learning, Deep Learning, Computer Vision, NLP, Generative AI,
+              RAG and LLMs
+            </strong>
+            , alongside Data Engineering technologies such as ETL pipelines,
+            Apache Airflow, data warehouses, data lakes, and Apache Spark. I also
+            develop production-ready APIs and applications using Python, FastAPI,
+            Flask, Spring Boot, Docker, and REST APIs.
+          </p>
 
-            <p className="mt-5 text-muted-foreground leading-relaxed">
-              Through academic and professional projects, I have worked on intelligent
-              systems combining{" "}
-              <strong className="text-foreground">
-                AI, data pipelines, explainability, and real-world applications
-              </strong>
-              . My goal is to contribute to challenging AI and Data projects while
-              continuously developing my expertise in Machine Learning, Generative AI,
-              Data Engineering, and MLOps.
-            </p>
+          <p className="mt-5 text-muted-foreground leading-relaxed">
+            Through academic and professional projects, I have worked on intelligent
+            systems combining{" "}
+            <strong className="text-foreground">
+              AI, data pipelines, explainability, and real-world applications
+            </strong>
+            . My goal is to contribute to challenging AI and Data projects while
+            continuously developing my expertise in Machine Learning, Generative AI,
+            Data Engineering, and MLOps.
+          </p>
           </motion.div>
 
           <motion.div
