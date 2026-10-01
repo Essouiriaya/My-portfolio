@@ -491,6 +491,46 @@ export default function Portfolio() {
         </div>
       </Section>
 
+            {/* EXPERIENCE */}
+      <Section id="experience" eyebrow="Career" title="Experience">
+        <div className="relative mx-auto max-w-4xl">
+          <div className="absolute left-4 top-2 bottom-2 w-px bg-gradient-to-b from-primary/60 via-accent/40 to-transparent md:left-1/2" />
+          <div className="space-y-8">
+            {EXPERIENCE.map((e, i) => (
+              <motion.div
+                key={e.company}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.55, delay: i * 0.08 }}
+                className="relative pl-12 md:pl-0"
+              >
+                <span className="absolute left-2 top-6 grid h-5 w-5 place-items-center rounded-full bg-gradient-primary shadow-glow md:left-1/2 md:-translate-x-1/2">
+                  <span className="h-2 w-2 rounded-full bg-background" />
+                </span>
+                <div className={`md:w-1/2 ${i % 2 ? "md:ml-auto md:pl-10" : "md:pr-10"}`}>
+                  <div className="glass shadow-card rounded-2xl p-6 transition hover:-translate-y-0.5">
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <h3 className="text-lg font-semibold">{e.title}</h3>
+                      {e.website && (
+                        <a href={e.website} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
+                          Visit <ExternalLink size={12} />
+                        </a>
+                      )}
+                    </div>
+                    <div className="text-sm text-primary">{e.company} · <span className="text-muted-foreground">{e.domain}</span></div>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{e.desc}</p>
+                    <div className="mt-4 flex flex-wrap gap-1.5">
+                      {e.tech.map((t) => <TechBadge key={t}>{t}</TechBadge>)}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
       {/* PROJECTS */}
       <Section id="projects" eyebrow="Work" title="Selected Projects">
         <div className="grid gap-6 md:grid-cols-2">
@@ -531,45 +571,6 @@ export default function Portfolio() {
         </div>
       </Section>
 
-      {/* EXPERIENCE */}
-      <Section id="experience" eyebrow="Career" title="Experience">
-        <div className="relative mx-auto max-w-4xl">
-          <div className="absolute left-4 top-2 bottom-2 w-px bg-gradient-to-b from-primary/60 via-accent/40 to-transparent md:left-1/2" />
-          <div className="space-y-8">
-            {EXPERIENCE.map((e, i) => (
-              <motion.div
-                key={e.company}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.55, delay: i * 0.08 }}
-                className="relative pl-12 md:pl-0"
-              >
-                <span className="absolute left-2 top-6 grid h-5 w-5 place-items-center rounded-full bg-gradient-primary shadow-glow md:left-1/2 md:-translate-x-1/2">
-                  <span className="h-2 w-2 rounded-full bg-background" />
-                </span>
-                <div className={`md:w-1/2 ${i % 2 ? "md:ml-auto md:pl-10" : "md:pr-10"}`}>
-                  <div className="glass shadow-card rounded-2xl p-6 transition hover:-translate-y-0.5">
-                    <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <h3 className="text-lg font-semibold">{e.title}</h3>
-                      {e.website && (
-                        <a href={e.website} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
-                          Visit <ExternalLink size={12} />
-                        </a>
-                      )}
-                    </div>
-                    <div className="text-sm text-primary">{e.company} · <span className="text-muted-foreground">{e.domain}</span></div>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{e.desc}</p>
-                    <div className="mt-4 flex flex-wrap gap-1.5">
-                      {e.tech.map((t) => <TechBadge key={t}>{t}</TechBadge>)}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </Section>
 
       {/* EDUCATION */}
       <Section id="education" eyebrow="Background" title="Education">
