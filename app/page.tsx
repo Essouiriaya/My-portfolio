@@ -360,9 +360,13 @@ export default function Portfolio() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-8 max-w-3xl text-base text-muted-foreground sm:text-lg md:text-xl"
         >
-          Digital Transformation & AI Engineering Student · AI & Data Enthusiast
-          <br className="hidden sm:block" />
-          <span className="text-foreground/80">Building intelligent systems, data-driven applications and AI-powered solutions.</span>
+          <span>
+            Digital Transformation & AI Engineering Student · AI & Data Enthusiast
+          </span>
+          <br />
+          <span className="text-foreground/80">
+            Building intelligent systems, data-driven applications and AI-powered solutions.
+          </span>
         </motion.p>
 
         <motion.div
