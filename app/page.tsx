@@ -491,7 +491,7 @@ export default function Portfolio() {
         </div>
       </Section>
 
-            {/* EXPERIENCE */}
+      {/* EXPERIENCE */}
       <Section id="experience" eyebrow="Career" title="Experience">
         <div className="relative mx-auto max-w-4xl">
           <div className="absolute left-4 top-2 bottom-2 w-px bg-gradient-to-b from-primary/60 via-accent/40 to-transparent md:left-1/2" />
